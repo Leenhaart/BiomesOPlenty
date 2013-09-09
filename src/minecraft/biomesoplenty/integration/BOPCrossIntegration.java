@@ -53,6 +53,17 @@ public class BOPCrossIntegration {
                 e.printStackTrace(System.err);
             }
         }
+        
+        if (Loader.isModLoaded("CCMicroblock"))
+        {
+            try {
+                MultipartIntegration.init();
+            }
+            catch (Exception e) {
+                System.out.println("[BiomesOPlenty] There was an error while integrating Forge Multipart with Biomes O' Plenty!");
+                e.printStackTrace(System.err);
+            }
+        }
 	}
 	
 	public static void postInit()
