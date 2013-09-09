@@ -1,6 +1,6 @@
 package forestry.api.recipes;
 
-import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.liquids.LiquidStack;
 
 /**
  * Provides an interface to the recipe manager of the still.
@@ -25,5 +25,5 @@ public interface IStillManager extends ICraftingProvider {
 	 * @param output
 	 *            ItemStack representing the output liquid
 	 */
-	public void addRecipe(int cyclesPerUnit, FluidStack input, FluidStack output);
+	public void addRecipe(int cyclesPerUnit, LiquidStack input, LiquidStack output);
 }

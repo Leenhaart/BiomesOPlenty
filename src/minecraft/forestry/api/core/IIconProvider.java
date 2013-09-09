@@ -14,6 +14,8 @@ public interface IIconProvider {
 	Icon getIcon(short texUID);
 	
 	@SideOnly(Side.CLIENT)
-	void registerIcons(IconRegister register);
+	void registerItemIcons(IconRegister itemMap);
+	@SideOnly(Side.CLIENT)
+	void registerTerrainIcons(IconRegister terrainMap);
 
 }
